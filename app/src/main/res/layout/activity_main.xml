@@ -5,8 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.maliwan.myapplication.MainActivity">
-<LinearLayout
 
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/sririwattana"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+<LinearLayout
+    android:layout_centerInParent="true"
+    android:padding="@dimen/h2"
+    android:layout_margin="@dimen/magin"
+    android:background="#86ffffff"
+    android:layout_marginTop="@dimen/magin"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -26,7 +36,7 @@
         android:text="@string/name_sriwattan"
         android:textSize="@dimen/h1"
         android:layout_width="wrap_content"
-        android:layout_height="108dp" />
+        android:layout_height="wrap_content" />
 
 
     <LinearLayout
@@ -70,6 +80,23 @@
             android:hint="@string/password" />
     </LinearLayout>
 
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#ea0909"
+        android:textSize="@dimen/h2"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/new_resgiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
 </LinearLayout>
+
+    <Button
+
+        android:text="@string/login"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>
