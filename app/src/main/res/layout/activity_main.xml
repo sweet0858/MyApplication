@@ -12,14 +12,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 <LinearLayout
-    android:layout_centerInParent="true"
     android:padding="@dimen/h2"
-    android:layout_margin="@dimen/magin"
     android:background="#86ffffff"
-    android:layout_marginTop="@dimen/magin"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true">
 
     <ImageView
         android:layout_gravity="center_horizontal"
@@ -54,6 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <EditText
+            android:id="@+id/edtUser"
             android:hint="@string/user"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -75,12 +75,14 @@
             android:src="@mipmap/ic_pasword" />
 
         <EditText
+            android:id="@+id/edtPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password" />
     </LinearLayout>
 
     <TextView
+        android:id="@+id/txtRegister"
         android:textStyle="bold"
         android:textColor="#ea0909"
         android:textSize="@dimen/h2"
@@ -93,7 +95,7 @@
 </LinearLayout>
 
     <Button
-
+        android:id="@+id/btnLogin"
         android:text="@string/login"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"

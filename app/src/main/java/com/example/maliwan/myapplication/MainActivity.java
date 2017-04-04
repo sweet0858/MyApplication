@@ -2,12 +2,36 @@ package com.example.maliwan.myapplication;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Explicit การประการตัวแปร
+    private EditText userEditText,PasswordEditText;
+    private TextView textView;
+    private Button button;
+
+
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    //Initial View คือการผูกตัวแปร กับ Viewที่อยู่ที่ Activity
+        initialView();
+
+    }// Main Method
+
+    private void initialView() {
+        userEditText = (EditText) findViewById(R.id.edtUser);
+        PasswordEditText = (EditText) findViewById(R.id.edtPassword);
+        textView = (TextView) findViewById(R.id.txtRegister);
+        button = (Button) findViewById(R.id.btnLogin);
+
+
+
     }
-}
+
+}   // Main Class นี้คือ คลาสหลัก
